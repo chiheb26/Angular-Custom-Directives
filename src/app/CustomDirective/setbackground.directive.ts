@@ -9,7 +9,7 @@ export class SetBackGroundDirective implements OnInit{
     //private element: ElementRef;
     constructor(private element: ElementRef){
        // element.nativeElement.style.backgroundColor="#C8E6C9";
-        this.element=element;
+        //this.element=element;
     }
 
     ngOnInit(){

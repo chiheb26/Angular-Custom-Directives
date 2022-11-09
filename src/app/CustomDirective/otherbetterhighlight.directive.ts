@@ -1,9 +1,9 @@
 import { Directive, ElementRef, HostBinding, HostListener, Input, OnInit, Renderer2 } from '@angular/core';
 
 @Directive({
-  selector: '[appBetterhighlight]'
+  selector: '[appOtherBetterhighlight]'
 })
-export class BetterhighlightDirective implements OnInit{
+export class OtherBetterhighlightDirective implements OnInit{
 
   constructor(private element : ElementRef, private renderer : Renderer2) {
 
@@ -12,9 +12,10 @@ export class BetterhighlightDirective implements OnInit{
    @Input()
    deafultColor : string ="transparent";
 
-   @Input()
+   @Input("appOtherBetterhighlight")
    highlightColor : string = "pink";
-
+   @Input()
+   title : string = "This is a title";
    @HostBinding("style.backgroundColor")
    background : string =this.deafultColor;
    

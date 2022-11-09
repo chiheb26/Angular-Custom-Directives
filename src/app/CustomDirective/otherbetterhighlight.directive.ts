@@ -14,8 +14,10 @@ export class OtherBetterhighlightDirective implements OnInit{
 
    @Input("appOtherBetterhighlight")
    highlightColor : string = "pink";
+   
    @Input()
    title : string = "This is a title";
+
    @HostBinding("style.backgroundColor")
    background : string =this.deafultColor;
    

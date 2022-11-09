@@ -1,4 +1,14 @@
 <h1 setBackground>This is App Component</h1>
-<div setBackground class="container">
-  <p>This is a demo HTML content </p>
+<div appHover title="This is a div" setBackground class="container">
+  <p>This is a demo HTML content to understand custom attribute directive </p>
+</div>
+
+<div appHighlight appHover >
+  <p>This is a demo HTML content to understand @HostListener </p>
+</div>
+<div class="container" appHover appBetterhighlight [deafultColor]="'yellow'" [highlightColor]="'red'" >
+  <p>This is a demo HTML content to understand @HostBinding </p>
+</div>
+<div class="container" appHover [appOtherBetterhighlight]="'pink'" [deafultColor]="'green'" [title]="'Title example'"  >
+  <p>This is a demo HTML content to understand @HostBinding </p>
 </div>

@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'CustomDirectives';
   active : boolean = true;
   display : boolean = true;
+  occupation :string = "teacher";
   buttonText=this.display?"Hide Notice":"Show Notice";
   displayNotice(){
     this.display=!this.display;

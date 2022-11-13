@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CustomDirectives';
+  active : boolean = true;
+  display : boolean = false;
+  buttonText=this.display?"Hide Notice":"Show Notice";
+  displayNotice(){
+    this.display=!this.display;
+    this.buttonText=this.display?"Hide Notice":"Show Notice";
+  
+  }
 }

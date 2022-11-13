@@ -9,6 +9,7 @@ import { BetterhighlightDirective } from './CustomDirective/betterhighlight.dire
 import { OtherBetterhighlightDirective } from './CustomDirective/otherbetterhighlight.directive';
 import { ClassDirective } from './CustomDirective/class.directive';
 import { StyleDirective } from './CustomDirective/style.directive';
+import { IfDirective } from './if.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StyleDirective } from './CustomDirective/style.directive';
     BetterhighlightDirective,
     OtherBetterhighlightDirective,
     ClassDirective,
-    StyleDirective
+    StyleDirective,
+    IfDirective
   ],
   imports: [
     BrowserModule

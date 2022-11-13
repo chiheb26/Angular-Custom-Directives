@@ -21,7 +21,7 @@
   <p>This is a demo HTML content to understand custom ngStyle directive </p>
 </div>
 <button  (click)="displayNotice()" class="btn btn-notice">{{buttonText}}</button>
-<div *ngIf="display; else myVar" class="info-container notice">
+<!-- <div *ngIf="display; else myVar" class="info-container notice">
   <h3>This is an important notice!</h3>
   <p>This is a notice issued for all website users.</p>
 </div>
@@ -36,4 +36,11 @@
 </ng-template>
 <ng-template #myVar2>
   <p>This is another example paragraph.</p>
-</ng-template>
+</ng-template> -->
+
+
+<div *appIf="display" class="info-container notice">
+  <h3>This is an important notice!</h3>
+  <p>This is a notice issued for all website users.</p>
+</div>
+<p *appIf="10<5">This is a paragraph</p>
